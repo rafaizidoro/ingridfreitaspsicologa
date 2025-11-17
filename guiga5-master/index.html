@@ -1,0 +1,390 @@
+<!DOCTYPE html> <!-- Define que o documento é um arquivo HTML5 -->
+<html lang="pt-br"> <!-- Define o idioma principal da página como Português do Brasil, importante para SEO e acessibilidade -->
+  <head>
+    <!-- Título da página, que aparece na aba do navegador -->
+    <title>Ingrid Freitas — Psicologia Clínica</title>
+    
+    <!-- Meta tags fornecem metadados sobre o documento -->
+    <meta charset="utf-8"> <!-- Define o conjunto de caracteres como UTF-8, que suporta acentos e caracteres especiais -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <!-- Garante que a página seja responsiva e se ajuste a diferentes tamanhos de tela (celulares, tablets, desktops) -->
+    
+    <!-- Importa a fonte 'Poppins' do Google Fonts para ser usada no site -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <!-- Início da importação das folhas de estilo (CSS) -->
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css"> <!-- Biblioteca de ícones Open Iconic -->
+    <link rel="stylesheet" href="css/animate.css"> <!-- Biblioteca para animações de elementos (ex: fade in, slide up) -->
+    
+    <!-- CSS para o carrossel/slider de depoimentos -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <!-- CSS para a galeria de imagens em pop-up -->
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <!-- CSS para a biblioteca AOS (Animate On Scroll), que dispara animações quando o usuário rola a página -->
+    <link rel="stylesheet" href="css/aos.css">
+
+    <!-- Outra biblioteca de ícones -->
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <!-- Bibliotecas de ícones customizados, usados principalmente na seção de serviços -->
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <!-- Folha de estilo principal e personalizada do site -->
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <!-- Os atributos data-* ativam a funcionalidade "scrollspy" do Bootstrap, que destaca o item do menu correspondente à seção visível na tela -->
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	  
+	  
+    <!-- BARRA DE NAVEGAÇÃO PRINCIPAL -->
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+	    <div class="container">
+	      <!-- Logo/Nome que aparece na barra de navegação -->
+	      <a class="navbar-brand" href="index.html"><span>I</span>ngrid Freitas</a>
+	      <!-- Botão "hambúrguer" que aparece em telas menores para exibir/ocultar o menu -->
+	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <!-- Conteúdo do menu que será recolhido em telas menores -->
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <!-- Lista de links de navegação. 'ml-auto' alinha os itens à direita -->
+	        <ul class="navbar-nav nav ml-auto">
+	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Início</span></a></li>
+	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>Sobre</span></a></li>
+	          <li class="nav-item"><a href="#services-section" class="nav-link"><span>Serviços</span></a></li>
+	          <li class="nav-item"><a href="#testimonials-section" class="nav-link"><span>Depoimentos</span></a></li>
+	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contato</span></a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+	  
+	  <!-- SEÇÃO DE ABERTURA (HERO/BANNER) -->
+	  <section class="hero-wrap js-fullheight" id="home-section">
+      <!-- 'overlay' cria uma camada semi-transparente sobre a imagem de fundo para melhorar a legibilidade do texto -->
+      <div class="overlay"></div>
+      <div class="container">
+        <!-- Estrutura para centralizar o texto vertical e horizontalmente na seção -->
+        <div class="row no-gutters slider-text js-fullheight justify-content-center align-items-center">
+          <div class="col-lg-8 col-md-6 ftco-animate d-flex align-items-center">
+          	<div class="text text-center">
+          		<span class="subheading">Olá! Eu sou</span>
+		  				<h1>Ingrid Freitas</h1>
+			  				<h2>Sou 
+								  <!-- Este span é o alvo do script de texto rotativo (efeito de digitação) -->
+								  <span
+								     class="txt-rotate"
+								     data-period="2000"
+								     data-rotate='[ "Psicóloga Clínica.", "Especialista em Análise do Comportamento.", "Acolhedora e Empática." ]'></span>
+								</h2>
+							</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Ícone de mouse que indica ao usuário que a página pode ser rolada para baixo -->
+      <div class="mouse">
+				<a href="#" class="mouse-icon">
+					<div class="mouse-wheel"><span class="ion-ios-arrow-round-down"></span></div>
+				</a>
+			</div>
+    </section>
+
+    <!-- SEÇÃO SOBRE MIM -->
+    <section class="ftco-about img ftco-section ftco-no-pt ftco-no-pb" id="about-section">
+    	<div class="container">
+    		<!-- Layout de duas colunas: uma para a imagem e outra para o texto -->
+    		<div class="row d-flex no-gutters">
+    			<!-- Coluna da imagem -->
+    			<div class="col-md-6 col-lg-6 d-flex">
+    				<div class="img-about img d-flex align-items-stretch">
+    					<div class="overlay"></div>
+	    				<!-- A imagem é definida como um background-image via CSS inline -->
+	    				<div class="img d-flex align-self-stretch align-items-center" style="background-image:url(https://static.wixstatic.com/media/7b2eb1_161d8088a1c94616a262418ca8c69973~mv2.jpeg);">
+	    				</div>
+    				</div>
+    			</div>
+    			<!-- Coluna do texto de apresentação -->
+    			<div class="col-md-6 col-lg-6 pl-md-5 py-5">
+    				<div class="row justify-content-start pb-3">
+		          <div class="col-md-12 heading-section ftco-animate">
+		          	<h1 class="big">Sobre</h1>
+		            <h2 class="mb-4">Sobre Mim</h2>
+		            <p>Sou psicóloga clínica com atuação pautada na Análise do Comportamento. Meu compromisso é oferecer um espaço de escuta ética, acolhedora e sem julgamentos, onde você possa se sentir seguro para construir caminhos de desenvolvimento e bem-estar.</p>
+		            <!-- Lista com informações de contato e profissionais -->
+		            <ul class="about-info mt-4 px-md-0 px-2">
+		            	<li class="d-flex"><span>Nome:</span> <span>Ingrid Freitas</span></li>
+		            	<li class="d-flex"><span>CRP:</span> <span>24/04979</span></li>
+		            	<li class="d-flex"><span>Email:</span> <span>ingridfreitaspsicologia@gmail.com</span></li>
+		            	<li class="d-flex"><span>Telefone: </span> <span>+55 (11) 93334-7475</span></li>
+		            </ul>
+		          </div>
+		        </div>
+	          <div class="counter-wrap ftco-animate d-flex mt-md-3">
+              <div class="text">
+                <!-- Botão de "Call to Action" (Chamada para Ação) que leva diretamente para o WhatsApp -->
+                <p><a href="https://wa.me/5511933347475" target="_blank" class="btn btn-primary py-3 px-3">Agendar via WhatsApp</a></p>
+              </div>
+	          </div>
+	        </div>
+        </div>
+    	</div>
+    </section>
+    
+    <!-- SEÇÃO DE SERVIÇOS -->
+    <section class="ftco-section" id="services-section">
+    	<div class="container-fluid px-md-5">
+    		<div class="row justify-content-center py-5 mt-5">
+          <div class="col-md-12 heading-section text-center ftco-animate">
+          	<h1 class="big big-2">Serviços</h1>
+            <h2 class="mb-4">Serviços Psicológicos</h2>
+            <p>Um cuidado sensível e ético, especialmente voltado para quem busca compreender e cuidar de si.</p>
+          </div>
+        </div>
+    		<div class="row">
+					<!-- Cada serviço é um "card" (bloco de conteúdo) ocupando 4 de 12 colunas em telas médias e grandes -->
+					<div class="col-md-4 text-center d-flex ftco-animate">
+						<a href="#" class="services-1 shadow">
+							<span class="icon">
+								<!-- Ícone personalizado da biblioteca Flaticon -->
+								<i class="flaticon-analysis"></i>
+							</span>
+							<div class="desc">
+								<h3 class="mb-5">Atendimento On-line</h3>
+								<p>Acolhimento com ética, segurança e conforto, independentemente da sua localização, seguindo os mesmos princípios do atendimento presencial.</p>
+							</div>
+						</a>
+					</div>
+					<!-- Repetição da estrutura para os demais serviços -->
+					<div class="col-md-4 text-center d-flex ftco-animate">
+						<a href="#" class="services-1 shadow">
+							<span class="icon">
+								<i class="flaticon-flasks"></i>
+							</span>
+							<div class="desc">
+								<h3 class="mb-5">Psicoterapia para Autistas</h3>
+								<p>Apoio para adolescentes e adultos no espectro para lidar com ansiedade, exaustão social, relações, autoconhecimento e regulação emocional.</p>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-4 text-center d-flex ftco-animate">
+						<a href="#" class="services-1 shadow">
+							<span class="icon">
+								<i class="flaticon-ideas"></i>
+							</span>
+							<div class="desc">
+								<h3 class="mb-5">Apoio para Diagnóstico Recente</h3>
+								<p>Acolhimento para o intenso processo de (re)descoberta após o diagnóstico tardio, ajudando na compreensão da identidade e fortalecendo a autoestima.</p>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-4 text-center d-flex ftco-animate">
+						<a href="#" class="services-1 shadow">
+							<span class="icon">
+								<i class="flaticon-innovation"></i>
+							</span>
+							<div class="desc">
+								<h3 class="mb-5">Orientação para Pais e Cuidadores</h3>
+								<p>Espaço de escuta e orientação para familiares de pessoas autistas, com foco no acolhimento de angústias e estratégias de cuidado.</p>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-4 text-center d-flex ftco-animate">
+						<a href="#" class="services-1 shadow">
+							<span class="icon">
+								<i class="flaticon-ux-design"></i>
+							</span>
+							<div class="desc">
+								<h3 class="mb-5">Ansiedade e Depressão</h3>
+								<p>Apoio para compreender e lidar com os desafios da ansiedade e da depressão, buscando caminhos para uma vida mais equilibrada.</p>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-4 text-center d-flex ftco-animate">
+						<a href="#" class="services-1 shadow">
+							<span class="icon">
+								<i class="flaticon-idea"></i>
+							</span>
+							<div class="desc">
+								<h3 class="mb-5">TDAH</h3>
+								<p>Estratégias para uma vida mais funcional e equilibrada, compreendendo o TDAH como uma forma diferente de funcionamento cerebral.</p>
+							</div>
+						</a>
+					</div>
+				</div>
+    	</div>
+    </section>
+ 
+
+    <!-- SEÇÃO DE DEPOIMENTOS -->
+    <section class="ftco-section testimony-section" id="testimonials-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 text-center heading-section ftco-animate">
+          	<h1 class="big big-2">Depoimentos</h1>
+            <h2 class="mb-4">Depoimentos de Pacientes</h2>
+            <p>O que dizem sobre o meu trabalho.</p>
+          </div>
+        </div>
+        <div class="row ftco-animate">
+          <div class="col-md-12">
+            <!-- Este é o contêiner do carrossel, ativado pela biblioteca Owl Carousel -->
+            <div class="carousel-testimony owl-carousel ftco-owl">
+              <!-- Cada 'div.item' representa um slide (um depoimento) no carrossel -->
+              <div class="item">
+                <div class="testimony-wrap_2 p-4 pb-5">
+                  <div class="user-img mb-5" style="background-image: url(images/person_1.jpg)">
+                    <span class="quote d-flex align-items-center justify-content-center">
+                      <i class="icon-quote-left"></i>
+                    </span>
+                  </div>
+                  <div class="text text-center">
+                    <p class="mb-5">O atendimento da Ingrid é muito acolhedor, ela consegue nos deixar super à vontade para nos abrirmos. Me sinto muito mais leve e feliz depois que comecei a terapia.</p>
+                    <p class="name">Paciente Anônimo</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Segundo depoimento -->
+              <div class="item">
+                <div class="testimony-wrap_2 p-4 pb-5">
+                  <div class="user-img mb-5" style="background-image: url(images/person_2.jpg)">
+                    <span class="quote d-flex align-items-center justify-content-center">
+                      <i class="icon-quote-left"></i>
+                    </span>
+                  </div>
+                  <div class="text text-center">
+                    <p class="mb-5">A Ingrid é uma profissional incrível, atenciosa e dedicada! A cada sessão me sinto mais confiante. Recomendo muito seu trabalho.</p>
+                    <p class="name">Paciente Anônimo</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Terceiro depoimento -->
+              <div class="item">
+                <div class="testimony-wrap_2 p-4 pb-5">
+                  <div class="user-img mb-5" style="background-image: url(images/person_3.jpg)">
+                    <span class="quote d-flex align-items-center justify-content-center">
+                      <i class="icon-quote-left"></i>
+                    </span>
+                  </div>
+                  <div class="text text-center">
+                    <p class="mb-5">Estou muito satisfeita com o acompanhamento. A abordagem dela é muito sensível e me ajudou a entender muitas coisas sobre mim. Agradeço por todo o cuidado.</p>
+                    <p class="name">Paciente Anônimo</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEÇÃO DE CONTATO -->
+    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+      <div class="container">
+      	<div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Contato</h1>
+            <h2 class="mb-4">Entre em Contato</h2>
+            <p>Pronta para começar sua jornada de autoconhecimento? Envie uma mensagem.</p>
+          </div>
+        </div>
+
+        <!-- Blocos com informações de contato rápido -->
+        <div class="row d-flex contact-info mb-5">
+          <div class="col-md-6 col-lg-4 d-flex ftco-animate">
+          	<div class="align-self-stretch box text-center p-4 shadow">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-whatsapp"></span>
+          		</div>
+          		<div>
+	          		<h3 class="mb-4">WhatsApp</h3>
+		            <p><a href="https://wa.me/5511933347475" target="_blank">(11) 93334-7475</a></p>
+	            </div>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-4 d-flex ftco-animate">
+          	<div class="align-self-stretch box text-center p-4 shadow">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-paper-plane"></span>
+          		</div>
+          		<div>
+	          		<h3 class="mb-4">Endereço de E-mail</h3>
+		            <p><a href="mailto:ingridfreitaspsicologia@gmail.com">ingridfreitaspsicologia@gmail.com</a></p>
+		          </div>
+	          </div>
+          </div>
+        </div>
+
+
+          <!-- Coluna da imagem -->
+          <div class="col-md-6 d-flex">
+          	<div class="img" style="background-image: url(images/about.jpg);"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+		
+    <!-- RODAPÉ -->
+    <footer class="ftco-footer ftco-section">
+      <div class="container">
+        <!-- Layout do rodapé em colunas -->
+        <div class="row mb-5">
+          <!-- Coluna "Sobre" -->
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">Sobre</h2>
+              <p>Um espaço de escuta ética, acolhedora e sem julgamentos para seu desenvolvimento e bem-estar.</p>
+            </div>
+          </div>
+
+          <!-- Coluna "Tem alguma dúvida?" -->
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4">
+            	<h2 class="ftco-heading-2">Tem alguma dúvida?</h2>
+            	<div class="block-23 mb-3">
+	              <ul>
+	                <li><a href="https://wa.me/5511933347475" target="_blank"><span class="icon icon-phone"></span><span class="text">(11) 93334-7475</span></a></li>
+	                <li><a href="mailto:ingridfreitaspsicologia@gmail.com"><span class="icon icon-envelope"></span><span class="text">ingridfreitaspsicologia@gmail.com</span></a></li>
+	              </ul>
+	            </div>
+            </div>
+          </div>
+        </div>
+        <!-- Linha de direitos autorais -->
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <p>
+              <!-- Este script JavaScript insere o ano atual dinamicamente -->
+              Copyright &copy;<script>document.write(new Date().getFullYear());</script> Todos os direitos reservados | Ingrid Freitas Psicologia
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+  
+
+  <!-- Animação de carregamento (loader) que é exibida enquanto a página carrega -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+  <!-- Início da importação dos scripts JavaScript. É uma boa prática colocá-los no final do <body> para um carregamento mais rápido da página. -->
+  <script src="js/jquery.min.js"></script> <!-- Biblioteca jQuery, essencial para a maioria dos plugins abaixo -->
+  <script src="js/jquery-migrate-3.0.1.min.js"></script> <!-- Para garantir compatibilidade com versões mais antigas de plugins do jQuery -->
+  <script src="js/popper.min.js"></script> <!-- Dependência do Bootstrap para popovers e tooltips -->
+  <script src="js/bootstrap.min.js"></script> <!-- Funcionalidades do Bootstrap, como o menu responsivo -->
+  <script src="js/jquery.easing.1.3.js"></script> <!-- Efeitos de animação suave para rolagem -->
+  <script src="js/jquery.waypoints.min.js"></script> <!-- Detecta quando um elemento se torna visível na tela (usado com AOS) -->
+  <script src="js/jquery.stellar.min.js"></script> <!-- Para criar o efeito de paralaxe (fundo se move em velocidade diferente) -->
+  <script src="js/owl.carousel.min.js"></script> <!-- Ativa o carrossel de depoimentos -->
+  <script src="js/jquery.magnific-popup.min.js"></script> <!-- Ativa as galerias pop-up -->
+  <script src="js/aos.js"></script> <!-- Ativa as animações ao rolar a página -->
+  <script src="js/jquery.animateNumber.min.js"></script> <!-- Para animar números (contadores) -->
+  <script src="js/scrollax.min.js"></script> <!-- Outro plugin para efeitos de paralaxe na rolagem -->
+  
+  <!-- Arquivo JavaScript principal que inicializa todos os plugins e contém scripts personalizados -->
+  <script src="js/main.js"></script>
+    
+  </body>
+</html>
