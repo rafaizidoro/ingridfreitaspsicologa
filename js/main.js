@@ -84,27 +84,19 @@
 	
 
 	var carousel = function() {
-		$('.home-slider').owlCarousel({
-	    loop:true,
-	    autoplay: true,
-	    margin:0,
-	    animateOut: 'fadeOut',
-	    animateIn: 'fadeIn',
-	    nav:false,
-	    autoplayHoverPause: false,
-	    items: 1,
-	    navText : ["<span class='ion-md-arrow-back'></span>","<span class='ion-chevron-right'></span>"],
-	    responsive:{
-	      0:{
-	        items:1
-	      },
-	      600:{
-	        items:1
-	      },
-	      1000:{
-	        items:1
-	      }
-	    }
+		$('.carousel-testimony').owlCarousel({
+			center: false, // Não centraliza mais o item ativo
+			loop: true,
+			autoplay: true, // Adiciona autoplay para os slides passarem sozinhos
+			margin: 30, // Adiciona um espaço de 30px entre os depoimentos
+			responsive:{
+				0:{
+					items: 1 // Em telas pequenas (de 0px para cima), mostra 1 item
+				},
+				992:{ // A partir de 992px de largura (desktops)
+					items: 2 // Mostra 2 itens lado a lado
+				}
+			}
 		});
 	};
 	carousel();
