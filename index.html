@@ -216,61 +216,51 @@
     	</div>
     </section>
  
-    <!-- SEÇÃO DE CONTATOS E DEPOIMENTOS -->
+<!-- SEÇÃO COMBINADA COM TUDO RESPONSIVO -->
 <section class="ftco-section" id="contact-testimonials-section">
   <div class="container">
-    <!-- A classe 'row' cria um container flexbox para as colunas -->
     <div class="row">
 
-      <!-- COLUNA DA ESQUERDA (CONTATO) - OCUPA 1/3 DA TELA EM DESKTOPS -->
-      <!-- A classe 'col-lg-4' significa que em telas grandes (lg), esta coluna ocupará 4 de 12 partes do grid (ou 1/3) -->
-      <!-- A classe 'col-md-12' faz com que a coluna ocupe a tela inteira em telas médias e pequenas, empilhando o conteúdo verticalmente -->
+      <!-- COLUNA DA ESQUERDA (CONTATO) -->
       <div class="col-lg-4 col-md-12 ftco-animate">
-        <div class="heading-section">
+        <div class="heading-section text-center text-lg-left">
           <h1 class="big big-2">Contato</h1>
-          <h2 class="mb-4">Entre em Contato</h2>
+          <h2 class="mb-4">Fale Comigo</h2>
         </div>
-        <!-- Informações de contato que antes ficavam em cards separados -->
         <div class="contact-info-wrap">
-          <div class="contact-info-box d-flex align-items-center">
+          <!-- A MUDANÇA ESTÁ AQUI: adicionadas as classes de justificação -->
+          <div class="contact-info-box d-flex align-items-center justify-content-center justify-content-lg-start">
             <div class="icon d-flex align-items-center justify-content-center">
               <span class="icon-whatsapp"></span>
             </div>
             <div class="text">
-              <p><a href="https://wa.me/5511933347475" target="_blank">(11) 93334-7475</a></p>
+                <a href="https://wa.me/5511933347475" target="_blank">(11) 93334-7475</a>
             </div>
           </div>
-          <div class="contact-info-box d-flex align-items-center">
+          <!-- E A MUDANÇA ESTÁ AQUI TAMBÉM -->
+          <div class="contact-info-box d-flex align-items-center justify-content-center justify-content-lg-start">
             <div class="icon d-flex align-items-center justify-content-center">
               <span class="icon-paper-plane"></span>
             </div>
             <div class="text">
-              <p><a href="mailto:ingridfreitaspsicologia@gmail.com">ingridfreitaspsicologia@gmail.com</a></p>
+              <a href="mailto:ingridfreitaspsicologia@gmail.com">ingridfreitaspsicologia@gmail.com</a>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- COLUNA DA DIREITA (DEPOIMENTOS) - OCUPA 2/3 DA TELA EM DESKTOPS -->
-      <!-- A classe 'col-lg-8' significa que em telas grandes (lg), esta coluna ocupará 8 de 12 partes do grid (ou 2/3) -->
+      <!-- COLUNA DA DIREITA (DEPOIMENTOS) -->
       <div class="col-lg-8 col-md-12 ftco-animate">
-        <div class="heading-section">
+        <div class="heading-section text-center text-lg-left">
             <h1 class="big big-2">Depoimentos</h1>
             <h2 class="mb-4">Depoimentos de Pacientes</h2>
-            <p>O que dizem sobre o meu trabalho.</p>
         </div>
-        <!-- O carrossel de depoimentos agora está dentro da coluna da direita -->
         <div class="carousel-testimony owl-carousel ftco-owl">
           <!-- Item 1 do carrossel -->
           <div class="item">
             <div class="testimony-wrap_2 p-4 pb-5">
-              <div class="user-img mb-5" style="background-image: url(images/person_1.jpg)">
-                <span class="quote d-flex align-items-center justify-content-center">
-                  <i class="icon-quote-left"></i>
-                </span>
-              </div>
               <div class="text text-center">
-                <p class="mb-5">O atendimento da Ingrid é muito acolhedor, ela consegue nos deixar super à vontade para nos abrirmos. Me sinto muito mais leve e feliz depois que comecei a terapia.</p>
+                <p class="mb-3">O atendimento da Ingrid é muito acolhedor, ela consegue nos deixar super à vontade para nos abrirmos. Me sinto muito mais leve e feliz depois que comecei a terapia.</p>
                 <p class="name">Paciente Anônimo</p>
               </div>
             </div>
@@ -278,13 +268,8 @@
           <!-- Item 2 do carrossel -->
           <div class="item">
             <div class="testimony-wrap_2 p-4 pb-5">
-              <div class="user-img mb-5" style="background-image: url(images/person_2.jpg)">
-                <span class="quote d-flex align-items-center justify-content-center">
-                  <i class="icon-quote-left"></i>
-                </span>
-              </div>
               <div class="text text-center">
-                <p class="mb-5">A Ingrid é uma profissional incrível, atenciosa e dedicada! A cada sessão me sinto mais confiante. Recomendo muito seu trabalho.</p>
+                <p class="mb-3">A Ingrid é uma profissional incrível, atenciosa e dedicada! A cada sessão me sinto mais confiante. Recomendo muito seu trabalho.</p>
                 <p class="name">Paciente Anônimo</p>
               </div>
             </div>
@@ -292,18 +277,13 @@
           <!-- Item 3 do carrossel -->
           <div class="item">
             <div class="testimony-wrap_2 p-4 pb-5">
-              <div class="user-img mb-5" style="background-image: url(images/person_3.jpg)">
-                <span class="quote d-flex align-items-center justify-content-center">
-                  <i class="icon-quote-left"></i>
-                </span>
-              </div>
               <div class="text text-center">
-                <p class="mb-5">Estou muito satisfeita com o acompanhamento. A abordagem dela é muito sensível e me ajudou a entender muitas coisas sobre mim. Agradeço por todo o cuidado.</p>
+                <p class="mb-3">Estou muito satisfeita com o acompanhamento. A abordagem dela é muito sensível e me ajudou a entender muitas coisas sobre mim. Agradeço por todo o cuidado.</p>
                 <p class="name">Paciente Anônimo</p>
               </div>
             </div>
           </div>
-        </div> <!-- Fim do carrossel -->
+        </div> 
       </div>
     </div>
   </div>
